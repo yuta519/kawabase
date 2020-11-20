@@ -1,0 +1,41 @@
+{% extends 'training_app/layout.html' %}
+
+{% block content %}
+    <!-- <h1 class="title">
+        Hi Django User!
+    </h1>
+    <p class="subtitle">
+        This is my Django Training app.
+    </p> -->
+
+{% if latest_training_list %}
+    <!-- <ul>
+    {% for training in latest_training_list %}
+        <li><a href="/training_app/{{ training.id }}/">{{ training.training_menu }}</a></li>
+    {% endfor %}
+    </ul> -->
+
+    {% for training in latest_training_list %}
+    <article class="box media">
+        <figure class="media-left">
+            <p class="image is-48x48">
+                <img src="http://placehold.it/96x96">
+            </p>
+        </figure>
+        <div class="media-content">
+            <div class="content">
+                <p><strong><a href="/training_app/{{ training.id }}/">{{ training.training_menu }}</a></strong><br>
+                    内容、内容、内容、内容、内容、内容、内容、内容、内容、内容、内容、内容、内容、内容<br>
+                    <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                </p>
+            </div>
+        </div>
+    </article>
+    {% endfor %}
+
+{% else %}
+    <p>No Trainings are available.</p>
+{% endif %}
+
+{% endblock %}
+
