@@ -27,3 +27,6 @@ def results(request, training_id):
 
 def vote(request, training_id):
     return HttpResponse("You're voting on question %s." % training_id)
+
+def timeline(request):
+    return render(request, 'training_app/timeline.html')

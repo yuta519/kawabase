@@ -13,4 +13,8 @@ urlpatterns = [
     path('<int:training_id>/results/', views.results, name='results'),
     # ex: /training_app/5/vote/
     path('<int:training_id>/vote/', views.vote, name='vote'),
+    # ex: /training_app/profile
+    # path('timeline', views.timeline, name='timeline'),
+    # ex: /training_app/timeline
+    path('timeline', views.timeline, name='timeline'),
 ]

@@ -1,19 +1,67 @@
 {% extends 'training_app/layout.html' %}
 
 {% block content %}
-    <!-- <h1 class="title">
-        Hi Django User!
-    </h1>
-    <p class="subtitle">
-        This is my Django Training app.
-    </p> -->
 
 {% if latest_training_list %}
-    <!-- <ul>
-    {% for training in latest_training_list %}
-        <li><a href="/training_app/{{ training.id }}/">{{ training.training_menu }}</a></li>
-    {% endfor %}
-    </ul> -->
+<section class="hero is-medium is-light is-bold4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://media.giphy.com/media/8VkgrPdxMh0oo/giphy.gif')">
+    <div class="hero-body has-text-centered">
+        <div class="container">
+            <h1 class="title has-text-white">
+                Primary bold title
+            </h1>
+            <h2 class="subtitle has-text-white">
+                Primary bold subtitle
+            </h2>
+        </div>
+    </div>
+</section>
+<section class="level">
+    <div class="level-left"></div>
+    <div class="level-right">
+      <div class="level-item tabs">
+        <ul>
+              <li class="is-active"><a>最近の成長</a></li>
+            <li><a>過去の成長</a></li>
+            <li><a>コメント付き</a></li>
+          </ul>
+       </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+      </div>
+    </div>
+</section>
+
+<main class="columns">
+    <div class="submenu column is-3">
+        <aside class="box">
+            <span class="fas fa-arrow-alt-circle-up"></span>kawabaseは、人の成長を後押しするを目指したプラットフォームサービスです。
+        </aside>
+        <aside class="box menu">
+            <p class="menu-label">
+                私の成長日記
+            </p>
+            <ul class="menu-list">
+                <li><a href="#" class="is-active">アクティビティ</a></a></li>
+                <li><a href="#">成長ステップ</a></li>
+                <li><a href="#">ツール</a></li>
+            </ul>
+            <p class="menu-label">
+                キーワード
+            </p>
+            <ul class="menu-list">
+                <li><a href="timeline">タイムライン</a></li>
+                <li><a href="#">技術教育</a>
+                    <ul>
+                    <li><a href="#">一社研修</a></li>
+                    <li><a href="#">定期開催コース</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ソフトウェアテスティング</a></li>
+            </ul>
+        </aside>
+    </div>
+    <div class="column">
 
     {% for training in latest_training_list %}
     <article class="box media">
