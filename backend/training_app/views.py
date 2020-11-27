@@ -34,3 +34,6 @@ def timeline(request):
     context = {'latest_training_list': latest_training_list,}
     return render(request, 'training_app/timeline.html', {'latest_training_list': latest_training_list,})
     # return render(request, 'training_app/timeline.html')
+
+def learn_more(request):
+    return render(request, 'training_app/learn_more.html')

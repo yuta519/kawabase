@@ -14,7 +14,7 @@
 	</head>
 	
 	<body>
-		<nav class="navbar hero is-dark">
+		<nav class="navbar hero has-background-black">
 			<div class="navbar-brand">
 				<div class="navbar-burger burger" data-target="my-navbar-menu">
 					<span></span>
@@ -23,7 +23,9 @@
 			<div id="my-navbar-menu" class="navbar-menu container">
 				<div class="navbar-start">
 					<div class="navbar-item">
-						<h1 class="title"><span class="fas fa-arrow-alt-circle-up"></span>kawabase</h1>
+						<a href='/training_app'>
+							<h1 class="title has-text-white"><span class="fas fa-arrow-alt-circle-up"></span>kawabase</h1>
+						</a>
 					</div>
 			  	</div>
 			  	<!-- <div class="my-navbar-center">
@@ -31,7 +33,9 @@
 					<div class="navbar-item"><img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"></div>
 				</div> -->
 				<div class="navbar-end">
-					<div class="navbar-item"><a href="#"><i class="fa fa-user"></i>ログイン</a></div>
+					<div class="navbar-item"><a href="#" class='has-text-white'>
+						<i class="fa fa-user has-text-white"></i>ログイン</a>
+					</div>
 					<input class="input" type="text" name="search" placeholder="キーワード検索">
 					<a class="button is-info"><i class="fa fa-search"></i>検索</a>
 				</div>

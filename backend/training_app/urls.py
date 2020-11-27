@@ -17,5 +17,8 @@ urlpatterns = [
     # path('timeline', views.timeline, name='timeline'),
     # ex: /training_app/timeline
     path('timeline', views.timeline, name='timeline'),
+    # ex: /training_app/learn_more
+    path('learn_more', views.learn_more, name='learn_more'),
+
 
 ]
