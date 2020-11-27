@@ -17,4 +17,5 @@ urlpatterns = [
     # path('timeline', views.timeline, name='timeline'),
     # ex: /training_app/timeline
     path('timeline', views.timeline, name='timeline'),
+
 ]

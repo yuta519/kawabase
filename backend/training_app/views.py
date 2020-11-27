@@ -29,4 +29,8 @@ def vote(request, training_id):
     return HttpResponse("You're voting on question %s." % training_id)
 
 def timeline(request):
-    return render(request, 'training_app/timeline.html')
+    latest_training_list = Training.objects.order_by('-date')[:5]
+    template = loader.get_template('training_app/index.html')
+    context = {'latest_training_list': latest_training_list,}
+    return render(request, 'training_app/timeline.html', {'latest_training_list': latest_training_list,})
+    # return render(request, 'training_app/timeline.html')
