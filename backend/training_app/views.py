@@ -37,3 +37,6 @@ def timeline(request):
 
 def learn_more(request):
     return render(request, 'training_app/learn_more.html')
+
+def syugyou(requests):
+    return render(requests, 'training_app/syugyou.html')
